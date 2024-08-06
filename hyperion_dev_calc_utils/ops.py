@@ -2,17 +2,20 @@
 File: ops.py
 
 Description:
-This file provides basic mathematical operations such as addition, subtraction, multiplication, and division. 
-Each function takes two integer arguments and returns the result of the corresponding operation. 
-The `add` function adds two integers, the `subtract` function subtracts one integer from another, 
-the `multiply` function multiplies two integers, and the `divide` function divides one integer by 
-another. The `divide` function also handles the case where the divisor is zero by returning an error message.
+This file provides basic mathematical operations such as addition, subtraction,
+multiplication, and division. Each function takes two integer arguments and
+returns the result of the corresponding operation. The `add` function adds two
+integers, the `subtract` function subtracts one integer from another, the
+`multiply` function multiplies two integers, and the `divide` function divides
+one integer by another. The `divide` function also handles the case where the
+divisor is zero by returning an error message.
 
 Functions:
 - add(x: int, y: int) -> int: Adds two integers.
 - subtract(x: int, y: int) -> int: Subtracts one integer from another.
 - multiply(x: int, y: int) -> int: Multiplies two integers.
-- divide(x: int, y: int) -> float: Divides one integer by another. Handles division by zero.
+- divide(x: int, y: int) -> float: Divides one integer by another. Handles
+  division by zero.
 """
 
 
@@ -29,6 +32,7 @@ def add(x: int, y: int) -> int:
     """
     return x + y
 
+
 def subtract(x: int, y: int) -> int:
     """
     Subtracts one integer from another.
@@ -42,6 +46,7 @@ def subtract(x: int, y: int) -> int:
     """
     return x - y
 
+
 def multiply(x: int, y: int) -> int:
     """
     Multiplies two integers.
@@ -54,6 +59,7 @@ def multiply(x: int, y: int) -> int:
         int: The product of x and y.
     """
     return x * y
+
 
 def divide(x: int, y: int) -> float:
     """
@@ -70,5 +76,6 @@ def divide(x: int, y: int) -> float:
         return "Error"
     return x / y
 
+
 if __name__ == "__main__":
-    print(add(1,2))
+    print(add(1, 2))

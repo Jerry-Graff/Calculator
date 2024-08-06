@@ -7,7 +7,8 @@ class Calculator:
 
     Attributes:
         expression (str): The current expression to be evaluated.
-        operations (dict): A dictionary mapping arithmetic operators to their corresponding functions.
+        operations (dict): A dictionary mapping arithmetic operators to their
+        corresponding functions.
     """
 
     def __init__(self) -> None:
